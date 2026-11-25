@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multiple Optimal Solutions</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Special Cases</header>
+<section class="content">
+
+<h1>Multiple Optimal Solutions</h1>
+
+<p>A transportation problem may have more than one allocation that produces the same optimal total cost.</p>
+
+<h2>How to Identify It</h2>
+<p>For a minimization problem, if an eligible non-basic cell has a reduced cost equal to zero at an optimal solution, an alternative optimal solution may exist.</p>
+
+<div class="formula">Δᵢⱼ = 0</div>
+
+<h2>Important Points</h2>
+<ul class="steps">
+<li>The current solution is optimal.</li>
+<li>An eligible unused route has zero reduced cost.</li>
+<li>A valid closed-loop pivot may produce another allocation.</li>
+<li>The total transportation cost remains unchanged.</li>
+</ul>
+
+<div class="callout success">
+Multiple optimal solutions have the same minimum objective value, even though their shipment allocations differ.
+</div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

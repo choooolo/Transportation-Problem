@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Russell's Approximation Method</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Initial Solution Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 04 · INITIAL ALLOCATION</span>
+<h1>Russell's Approximation Method (RAM)</h1>
+
+<p>Russell's Approximation Method is an alternative initial solution method that uses row and column maximum costs to estimate allocation priority.</p>
+
+<h2>Formula</h2>
+<div class="formula">Δᵢⱼ = cᵢⱼ − uᵢ − vⱼ</div>
+
+<p>Where:</p>
+<ul>
+<li>cᵢⱼ = Unit transportation cost.</li>
+<li>uᵢ = Maximum available cost in row i.</li>
+<li>vⱼ = Maximum available cost in column j.</li>
+</ul>
+
+<h2>Procedure</h2>
+<ol class="steps">
+<li>Find the maximum cost in each active row.</li>
+<li>Find the maximum cost in each active column.</li>
+<li>Calculate the evaluation value for each eligible cell.</li>
+<li>Select the smallest, usually most negative, evaluation value.</li>
+<li>Allocate the maximum possible quantity.</li>
+<li>Update supply and demand.</li>
+<li>Recalculate row and column maximum values.</li>
+<li>Repeat until all allocations are complete.</li>
+</ol>
+
+<h2>Important Note</h2>
+<p>RAM is an additional approximation method. It is not always taught alongside NWCM, LCM, and VAM in introductory courses.</p>
+
+<a href="../solver.html" class="btn-primary">Try RAM in Solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

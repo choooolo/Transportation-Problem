@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terminologies</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<script defer src="../assets/js/navigation.js"></script>
+<script defer src="../assets/js/glossary.js"></script>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button class="menu-toggle" id="menuToggle">☰</button>Terminologies</header>
+<section class="content">
+
+<div class="page-header">
+<span class="eyebrow">GETTING STARTED</span>
+<h1>Transportation Problem Terminologies</h1>
+<p>Important terms you need to understand before solving problems.</p>
+</div>
+
+<div class="form-field">
+<label>Search Terminology</label>
+<input id="glossarySearch" type="text" placeholder="Search terms...">
+</div>
+
+<div class="card-grid">
+
+<div class="card term"><h3>Source</h3><p>The location where goods originate or are supplied.</p><b>Example:</b> Factory D.</div>
+
+<div class="card term"><h3>Destination</h3><p>The location where goods must be delivered.</p><b>Example:</b> Warehouse A.</div>
+
+<div class="card term"><h3>Supply</h3><p>The quantity of goods available at each source.</p></div>
+
+<div class="card term"><h3>Demand</h3><p>The quantity of goods required by each destination.</p></div>
+
+<div class="card term"><h3>Transportation Cost</h3><p>The cost of transporting one unit from a particular source to a destination.</p></div>
+
+<div class="card term"><h3>Allocation</h3><p>The quantity assigned to a specific transportation route.</p></div>
+
+<div class="card term"><h3>Decision Variable</h3><p>The unknown quantity shipped from source i to destination j, represented by xᵢⱼ.</p></div>
+
+<div class="card term"><h3>Objective Function</h3><p>The mathematical expression that represents the total cost or profit to optimize.</p></div>
+
+<div class="card term"><h3>Constraints</h3><p>The mathematical restrictions imposed by supply, demand, and route availability.</p></div>
+
+<div class="card term"><h3>Feasible Solution</h3><p>A solution that satisfies all supply and demand constraints.</p></div>
+
+<div class="card term"><h3>Basic Feasible Solution</h3><p>A feasible allocation represented by an independent basis of occupied cells.</p></div>
+
+<div class="card term"><h3>Optimal Solution</h3><p>A feasible solution that produces the minimum cost or maximum profit.</p></div>
+
+<div class="card term"><h3>Dummy Source</h3><p>An artificial source added when total demand exceeds total supply.</p></div>
+
+<div class="card term"><h3>Dummy Destination</h3><p>An artificial destination added when total supply exceeds total demand.</p></div>
+
+<div class="card term"><h3>Penalty</h3><p>The difference between the two smallest available costs in a row or column when using VAM.</p></div>
+
+<div class="card term"><h3>Opportunity Cost</h3><p>The estimated change in total cost when introducing a previously unused route.</p></div>
+
+<div class="card term"><h3>Degeneracy</h3><p>A condition where the number of independent basic cells is fewer than m+n−1.</p></div>
+
+<div class="card term"><h3>Closed Loop</h3><p>An alternating horizontal and vertical path used to adjust transportation allocations.</p></div>
+
+<div class="card term"><h3>Entering Cell</h3><p>An unoccupied cell selected to enter the current transportation basis.</p></div>
+
+<div class="card term"><h3>Leaving Cell</h3><p>A basic cell that leaves the basis after an allocation adjustment.</p></div>
+
+<div class="card term"><h3>Reduced Cost</h3><p>The opportunity-cost indicator used in the MODI method.</p></div>
+
+<div class="card term"><h3>Shadow Price</h3><p>A dual value associated with a supply or demand constraint.</p></div>
+
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

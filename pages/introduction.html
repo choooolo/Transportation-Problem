@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction | Transportation Problems</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+
+    <!-- Introduction-specific CSS -->
+    <link rel="stylesheet" href="../assets/css/introduction.css">
+
+    <!-- JavaScript -->
+    <script defer src="../assets/js/navigation.js"></script>
+    <script defer src="../assets/js/common.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <button class="menu-toggle" id="menuToggle" type="button">☰</button>
+            Introduction
+        </header>
+
+        <section class="content">
+
+            <div class="page-header">
+                <span class="eyebrow">GETTING STARTED</span>
+                <h1>Introduction to Transportation Problems</h1>
+                <p>Learn the fundamentals of transportation models in Operations Research.</p>
+            </div>
+
+            <div class="panel">
+                <h2>What is a Transportation Problem?</h2>
+                <p>
+                    A Transportation Problem is a mathematical optimization problem
+                    that determines the most efficient way of transporting goods
+                    from multiple sources to multiple destinations while satisfying
+                    supply and demand requirements.
+                </p>
+
+                <p>The main objective is usually to minimize the total transportation cost.</p>
+
+                <div class="formula">
+                    Minimize Z = ΣΣ cᵢⱼxᵢⱼ
+                </div>
+            </div>
+
+            <h2>Purpose</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Minimize Cost</h3>
+                    <p>Find the cheapest combination of shipping routes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Meet Demand</h3>
+                    <p>Ensure every destination receives its required quantity.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Manage Supply</h3>
+                    <p>Distribute available goods without exceeding supply.</p>
+                </div>
+            </div>
+
+            <h2>Real-World Applications</h2>
+
+            <ul class="steps">
+                <li>Manufacturing companies distributing products to warehouses.</li>
+                <li>Food suppliers delivering goods to supermarkets.</li>
+                <li>Hospitals distributing medical supplies.</li>
+                <li>Relief organizations distributing emergency resources.</li>
+                <li>Companies managing regional distribution centers.</li>
+            </ul>
+
+            <h2>Two Main Stages</h2>
+
+            <div class="panel">
+                <h3>1. Initial Basic Feasible Solution</h3>
+                <p>
+                    Determine an initial allocation using North-West Corner,
+                    Least Cost, VAM, or another initial solution method.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h3>2. Optimality Testing</h3>
+                <p>
+                    Check whether the current allocation can be improved
+                    using MODI or Stepping Stone.
+                </p>
+            </div>
+
+            <div class="callout warning">
+                An initial feasible solution is not automatically an optimal solution.
+            </div>
+
+            <a href="terminology.html" class="btn-primary">
+                Next: Terminologies →
+            </a>
+
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

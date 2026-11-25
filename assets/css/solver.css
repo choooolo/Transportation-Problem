@@ -1,0 +1,51 @@
+
+.solver-container {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.solver-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.form-field label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+}
+
+.solver-result {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 17px;
+    margin-top: 20px;
+}
+
+.allocation-step {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 14px;
+    margin: 12px 0;
+}
+
+.allocation-step h4 {
+    color: var(--accent);
+    margin-bottom: 5px;
+}

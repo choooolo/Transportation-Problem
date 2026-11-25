@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transportation Solver</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+    <link rel="stylesheet" href="../assets/css/solver.css">
+
+    <script defer src="../assets/js/navigation.js"></script>
+    <script defer src="../assets/js/common.js"></script>
+    <script defer src="../assets/js/transportation-core.js"></script>
+    <script defer src="../assets/js/north-west-corner.js"></script>
+    <script defer src="../assets/js/least-cost.js"></script>
+    <script defer src="../assets/js/vogels-approximation.js"></script>
+    <script defer src="../assets/js/russells-approximation.js"></script>
+    <script defer src="../assets/js/modi.js"></script>
+    <script defer src="../assets/js/solver.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <span>Interactive Transportation Solver</span>
+        </header>
+
+        <section class="content">
+
+            <div class="page-header">
+                <span class="eyebrow">PRACTICE AND TOOLS</span>
+                <h1>Transportation Problem Solver</h1>
+                <p>Enter your transportation data and choose a solving method.</p>
+            </div>
+
+            <div class="solver-container">
+
+                <div class="solver-controls">
+
+                    <div class="form-field">
+                        <label>Number of Sources</label>
+                        <input type="number" id="sources" min="1" max="8" value="3">
+                    </div>
+
+                    <div class="form-field">
+                        <label>Number of Destinations</label>
+                        <input type="number" id="destinations" min="1" max="8" value="3">
+                    </div>
+
+                    <div class="form-field">
+                        <label>Objective</label>
+                        <select id="objective">
+                            <option value="min">Minimization</option>
+                            <option value="max">Maximization</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Solving Method</label>
+                        <select id="method">
+                            <option value="nw">North-West Corner</option>
+                            <option value="lc">Least Cost</option>
+                            <option value="vam">Vogel's Approximation</option>
+                            <option value="ram">Russell's Approximation</option>
+                            <option value="modi">Least Cost + MODI</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+                    <button id="generateTable" class="btn">
+                        Generate Transportation Table
+                    </button>
+
+                    <button id="loadExample" class="btn btn-secondary">
+                        Load Sample Problem
+                    </button>
+                </div>
+
+                <div id="matrixInputs"></div>
+
+                <div class="actions">
+                    <button id="solveButton" class="btn">
+                        Solve Transportation Problem
+                    </button>
+
+                    <button id="resetButton" class="btn btn-secondary">
+                        Reset
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="problemStatus"></div>
+
+            <div id="output"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

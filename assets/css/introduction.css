@@ -1,0 +1,167 @@
+
+/* ========================================
+   INTRODUCTION PAGE
+======================================== */
+
+.content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #172033;
+    margin: 0 0 12px;
+}
+
+.page-header p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.panel h2 {
+    color: #172033;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.panel p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.content h2 {
+    color: #172033;
+    font-size: 22px;
+    margin: 30px 0 18px;
+}
+
+.formula {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+    color: #1d4ed8;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    color: #1e40af;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.steps {
+    padding-left: 25px;
+    margin: 20px 0;
+}
+
+.steps li {
+    color: #475569;
+    padding: 8px 0;
+    line-height: 1.7;
+}
+
+.callout {
+    padding: 18px 22px;
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    margin: 25px 0;
+    line-height: 1.7;
+    color: #1e40af;
+}
+
+.callout.warning {
+    background: #fff7ed;
+    border-left-color: #f59e0b;
+    color: #92400e;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}

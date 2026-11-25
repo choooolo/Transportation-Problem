@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>North-West Corner Method</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Initial Solution Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 01 · INITIAL ALLOCATION</span>
+<h1>North-West Corner Method (NWCM)</h1>
+<p>The North-West Corner Method is used to obtain an initial basic feasible solution by starting at the upper-left corner of the transportation table.</p>
+
+<h2>Procedure</h2>
+<ol class="steps">
+<li>Start at the top-left cell.</li>
+<li>Compare the available supply and demand.</li>
+<li>Allocate the minimum of the two values.</li>
+<li>If supply is exhausted, move down to the next row.</li>
+<li>If demand is satisfied, move right to the next column.</li>
+<li>Continue until all supply and demand are satisfied.</li>
+</ol>
+
+<h2>Important Formula</h2>
+<div class="formula">Allocation = MIN(Remaining Supply, Remaining Demand)</div>
+
+<h2>Worked Example</h2>
+<p>Suppose the first source has supply of 100 and the first destination has demand of 300.</p>
+<div class="formula">Allocation = MIN(100, 300) = 100</div>
+<p>Source 1 is exhausted, so move down to the next row.</p>
+
+<h2>Advantages</h2>
+<ul>
+<li>Simple and easy to perform.</li>
+<li>Quickly generates an initial feasible solution.</li>
+<li>Useful for learning transportation table allocation.</li>
+</ul>
+
+<h2>Disadvantage</h2>
+<p>It ignores transportation costs when selecting cells, so the resulting initial cost may be high.</p>
+
+<a class="btn-primary" href="../solver.html">Try NW Corner in Solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

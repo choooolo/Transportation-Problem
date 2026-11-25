@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice Exercises</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<script defer src="../assets/js/navigation.js"></script>
+<script defer src="../assets/js/practice.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Practice Exercises</header>
+<section class="content">
+
+<h1>Practice Exercises</h1>
+<p>Test your understanding of transportation problems.</p>
+
+<div class="panel">
+<span class="tag">BEGINNER</span>
+<h2>Question 1: Balanced or Unbalanced?</h2>
+<p>Total supply = 500.</p>
+<p>Total demand = 700.</p>
+<p>Is this transportation problem balanced or unbalanced?</p>
+
+<select id="q1">
+<option value="">Select your answer</option>
+<option value="balanced">Balanced</option>
+<option value="unbalanced">Unbalanced</option>
+</select>
+
+<button onclick="checkQ1()" class="btn">Check Answer</button>
+<p id="feedback1"></p>
+</div>
+
+<div class="panel">
+<span class="tag">BEGINNER</span>
+<h2>Question 2: Dummy Source</h2>
+<p>Total supply = 500.</p>
+<p>Total demand = 700.</p>
+<p>How much dummy supply is required?</p>
+
+<input type="number" id="q2" placeholder="Enter your answer">
+
+<button onclick="checkQ2()" class="btn">Check Answer</button>
+<p id="feedback2"></p>
+</div>
+
+<div class="panel">
+<span class="tag">INTERMEDIATE</span>
+<h2>Question 3: Total Transportation Cost</h2>
+<p>Calculate the cost:</p>
+<div class="formula">
+(200 × 3) + (100 × 4) + (100 × 4) + (300 × 9)
+</div>
+
+<input type="number" id="practiceAnswer" placeholder="Your answer">
+
+<button id="checkPractice" class="btn">Check Answer</button>
+
+<p id="practiceFeedback"></p>
+</div>
+
+<div class="panel">
+<span class="tag">ADVANCED</span>
+<h2>Question 4: Number of Basic Allocations</h2>
+<p>A transportation table has 4 sources and 3 destinations.</p>
+<p>How many independent basic cells are required in a non-degenerate basis?</p>
+
+<input type="number" id="q4" placeholder="Enter your answer">
+<button onclick="checkQ4()" class="btn">Check Answer</button>
+<p id="feedback4"></p>
+</div>
+
+</section>
+</main>
+</div>
+<script>
+function checkQ1() {
+    const answer = document.getElementById("q1").value;
+    document.getElementById("feedback1").textContent =
+        answer === "unbalanced"
+        ? "Correct! Demand exceeds supply by 200."
+        : "Incorrect. Compare total supply with total demand.";
+}
+function checkQ2() {
+    const answer = Number(document.getElementById("q2").value);
+    document.getElementById("feedback2").textContent =
+        answer === 200
+        ? "Correct! Dummy source supply = 700 - 500 = 200."
+        : "Incorrect. Subtract total supply from total demand.";
+}
+function checkQ4() {
+    const answer = Number(document.getElementById("q4").value);
+    document.getElementById("feedback4").textContent =
+        answer === 6
+        ? "Correct! 4 + 3 - 1 = 6."
+        : "Incorrect. Use m + n - 1.";
+}
+</script>
+</body>
+</html>

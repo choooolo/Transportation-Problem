@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unbalanced Transportation Problem</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<script defer src="../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button class="menu-toggle" id="menuToggle">☰</button>Unbalanced Problems</header>
+<section class="content">
+
+<h1>Unbalanced Transportation Problems</h1>
+
+<p>A transportation problem is unbalanced when total supply is not equal to total demand.</p>
+
+<div class="formula">Total Supply ≠ Total Demand</div>
+
+<h2>Case 1: Supply Exceeds Demand</h2>
+
+<p>Example:</p>
+<div class="formula">Supply = 800<br>Demand = 600<br>Difference = 200</div>
+
+<p>Add a dummy destination with demand of 200.</p>
+
+<table>
+<tr><th>Source</th><th>Supply</th></tr>
+<tr><td>D</td><td>400</td></tr>
+<tr><td>E</td><td>400</td></tr>
+<tr><th>Total</th><th>800</th></tr>
+</table>
+
+<table>
+<tr><th>Destination</th><th>Demand</th></tr>
+<tr><td>A</td><td>300</td></tr>
+<tr><td>B</td><td>300</td></tr>
+<tr><td>Dummy</td><td>200</td></tr>
+<tr><th>Total</th><th>800</th></tr>
+</table>
+
+<h2>Case 2: Demand Exceeds Supply</h2>
+
+<p>Example:</p>
+<div class="formula">Supply = 500<br>Demand = 700<br>Difference = 200</div>
+
+<p>Add a dummy source with supply of 200.</p>
+
+<h2>Dummy Costs</h2>
+<p>Dummy routes usually receive a transportation cost of zero when there is no specified cost for unused supply or unmet demand.</p>
+
+<div class="callout warning">
+If the problem specifies a shortage penalty, disposal cost, or emergency purchasing cost, use that amount instead of automatically assuming zero.
+</div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

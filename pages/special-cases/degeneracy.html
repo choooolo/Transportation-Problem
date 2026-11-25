@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Degeneracy</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Special Cases</header>
+<section class="content">
+
+<h1>Degeneracy in Transportation Problems</h1>
+
+<p>Degeneracy occurs when the number of independent basic cells is less than the required number of basic variables.</p>
+
+<div class="formula">Required Basic Cells = m + n − 1</div>
+
+<h2>Example</h2>
+<p>For a transportation table with 3 sources and 3 destinations:</p>
+<div class="formula">3 + 3 − 1 = 5</div>
+<p>The solution should have five independent basic cells.</p>
+
+<h2>How to Resolve Degeneracy</h2>
+<ol class="steps">
+<li>Count the independent basic cells.</li>
+<li>Compare the count with m+n−1.</li>
+<li>If there are fewer, select an appropriate independent empty cell.</li>
+<li>Introduce a very small quantity ε.</li>
+<li>Ensure that the selected cell does not create a closed-loop dependency.</li>
+<li>Continue the optimization process using the completed basis.</li>
+</ol>
+
+<div class="callout warning">
+Epsilon is a bookkeeping value, not an ordinary positive shipment. A zero allocation should not automatically be counted as a basic cell unless it is explicitly retained as part of an independent basis.
+</div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

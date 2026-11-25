@@ -1,0 +1,48 @@
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 13px;
+}
+
+th,
+td {
+    border: 1px solid #dce3ed;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #edf3fb;
+    color: #17365d;
+}
+
+td.allocated {
+    background: #dcfce7;
+    font-weight: bold;
+}
+
+td.selected {
+    background: #dbeafe;
+}
+
+td.prohibited {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.matrix-input {
+    width: 75px;
+    max-width: 100%;
+    padding: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    text-align: center;
+}

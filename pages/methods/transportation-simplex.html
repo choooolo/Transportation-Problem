@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transportation Simplex</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Optimization Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 07 · ADVANCED OPTIMIZATION</span>
+<h1>Transportation Simplex Method</h1>
+
+<p>The Transportation Simplex Method is a specialized form of the simplex algorithm designed for transportation problems.</p>
+
+<h2>Important Concepts</h2>
+
+<div class="card-grid">
+<div class="card"><h3>Basic Variables</h3><p>Variables currently included in the transportation basis.</p></div>
+<div class="card"><h3>Non-Basic Variables</h3><p>Variables currently outside the basis.</p></div>
+<div class="card"><h3>Entering Variable</h3><p>A variable selected to enter the basis.</p></div>
+<div class="card"><h3>Leaving Variable</h3><p>A basic variable removed during a pivot.</p></div>
+<div class="card"><h3>Pivot</h3><p>An adjustment that changes the current basis.</p></div>
+<div class="card"><h3>Reduced Cost</h3><p>Indicates whether an entering variable can improve the objective.</p></div>
+</div>
+
+<h2>General Procedure</h2>
+<ol class="steps">
+<li>Obtain an initial basic feasible solution.</li>
+<li>Establish a valid basis of m+n−1 independent cells.</li>
+<li>Calculate reduced costs.</li>
+<li>Select an entering variable if improvement is possible.</li>
+<li>Construct a closed loop.</li>
+<li>Perform the pivot adjustment.</li>
+<li>Update the basis.</li>
+<li>Repeat until optimality is achieved.</li>
+</ol>
+
+<h2>Relationship with MODI</h2>
+<p>MODI provides a convenient way to calculate the potentials and reduced costs used in the transportation simplex procedure.</p>
+
+</section>
+</main>
+</div>
+</body>
+</html>

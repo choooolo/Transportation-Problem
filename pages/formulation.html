@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathematical Formulation</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<script defer src="../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button class="menu-toggle" id="menuToggle">☰</button>Mathematical Formulation</header>
+<section class="content">
+
+<div class="page-header">
+<span class="eyebrow">GETTING STARTED</span>
+<h1>Mathematical Formulation</h1>
+<p>Learn how to represent a transportation problem using mathematical equations.</p>
+</div>
+
+<h2>Decision Variables</h2>
+<div class="formula">xᵢⱼ = Quantity transported from source i to destination j</div>
+
+<h2>Transportation Costs</h2>
+<div class="formula">cᵢⱼ = Cost per unit from source i to destination j</div>
+
+<h2>Objective Function</h2>
+<div class="formula">MIN Z = Σᵢ Σⱼ cᵢⱼxᵢⱼ</div>
+<p>The objective is to minimize the total transportation cost.</p>
+
+<h2>Supply Constraints</h2>
+<div class="formula">Σⱼ xᵢⱼ = aᵢ</div>
+<p>The total quantity shipped from each source must equal its supply in a balanced transportation model.</p>
+
+<h2>Demand Constraints</h2>
+<div class="formula">Σᵢ xᵢⱼ = bⱼ</div>
+<p>The total quantity received by each destination must equal its demand.</p>
+
+<h2>Non-Negativity Constraints</h2>
+<div class="formula">xᵢⱼ ≥ 0</div>
+
+<h2>Meaning of Symbols</h2>
+<table>
+<tr><th>Symbol</th><th>Meaning</th></tr>
+<tr><td>xᵢⱼ</td><td>Quantity transported</td></tr>
+<tr><td>cᵢⱼ</td><td>Unit transportation cost</td></tr>
+<tr><td>aᵢ</td><td>Supply of source i</td></tr>
+<tr><td>bⱼ</td><td>Demand of destination j</td></tr>
+<tr><td>m</td><td>Number of sources</td></tr>
+<tr><td>n</td><td>Number of destinations</td></tr>
+<tr><td>Z</td><td>Total transportation cost</td></tr>
+</table>
+
+<div class="callout">
+For a balanced transportation problem, total supply equals total demand.
+</div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stepping Stone Method</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Optimization Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 05 · OPTIMIZATION</span>
+<h1>Stepping Stone Method</h1>
+
+<p>The Stepping Stone Method determines whether an initial transportation solution can be improved by evaluating unused transportation routes.</p>
+
+<h2>Procedure</h2>
+<ol class="steps">
+<li>Obtain an initial basic feasible solution.</li>
+<li>Identify an unoccupied cell.</li>
+<li>Start a closed loop from that cell.</li>
+<li>Move horizontally or vertically through occupied cells.</li>
+<li>Return to the original cell without repeating other cells.</li>
+<li>Assign alternating plus and minus signs.</li>
+<li>Calculate the net transportation cost change.</li>
+<li>Repeat for all eligible unoccupied cells.</li>
+<li>Choose the most negative improvement index.</li>
+<li>Adjust allocations using the smallest minus-position allocation.</li>
+<li>Repeat until no negative improvement index remains.</li>
+</ol>
+
+<h2>Opportunity Cost</h2>
+<div class="formula">Δ = Sum of Plus Costs − Sum of Minus Costs</div>
+
+<h2>Optimality Condition</h2>
+<div class="callout success">
+For minimization, if every eligible unoccupied cell has an improvement index greater than or equal to zero, the solution is optimal.
+</div>
+
+<h2>Important Terms</h2>
+<ul>
+<li>Closed loop</li>
+<li>Entering cell</li>
+<li>Leaving cell</li>
+<li>Plus position</li>
+<li>Minus position</li>
+<li>Improvement index</li>
+</ul>
+
+<a href="../solver.html" class="btn-primary">Open Transportation Solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

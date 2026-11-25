@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maximization Transportation</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Special Cases</header>
+<section class="content">
+
+<h1>Maximization Transportation Problems</h1>
+
+<p>In a maximization transportation problem, the objective is to obtain the highest possible total profit instead of minimizing transportation cost.</p>
+
+<h2>Conversion Formula</h2>
+<div class="formula">c'ᵢⱼ = M − pᵢⱼ</div>
+
+<p>Where:</p>
+<ul>
+<li>M = Largest profit in the matrix.</li>
+<li>pᵢⱼ = Original unit profit.</li>
+<li>c'ᵢⱼ = Converted minimization cost.</li>
+</ul>
+
+<h2>Example</h2>
+<table>
+<tr><th>Route</th><th>Original Profit</th><th>Converted Cost (M = 20)</th></tr>
+<tr><td>A</td><td>20</td><td>0</td></tr>
+<tr><td>B</td><td>15</td><td>5</td></tr>
+<tr><td>C</td><td>10</td><td>10</td></tr>
+</table>
+
+<h2>Procedure</h2>
+<ol class="steps">
+<li>Find the largest profit value.</li>
+<li>Subtract each profit from the maximum profit.</li>
+<li>Use the resulting matrix as the equivalent minimization model.</li>
+<li>Solve the transportation allocation problem.</li>
+<li>Calculate the original total profit using the original profit matrix.</li>
+</ol>
+
+<div class="callout warning">
+This conversion assumes a fixed total quantity shipped. If the model has different constraints or route restrictions, verify the equivalence before using it.
+</div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

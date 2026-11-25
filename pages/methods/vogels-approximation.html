@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vogel's Approximation Method</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Initial Solution Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 03 · INITIAL ALLOCATION</span>
+<h1>Vogel's Approximation Method (VAM)</h1>
+
+<p>Vogel's Approximation Method uses penalties to determine which row or column should be allocated first.</p>
+
+<h2>What is a Penalty?</h2>
+<p>A penalty represents the difference between the two lowest available transportation costs in a row or column.</p>
+
+<div class="formula">Penalty = Second Lowest Cost − Lowest Cost</div>
+
+<h2>Procedure</h2>
+<ol class="steps">
+<li>Find the two lowest eligible costs in every active row.</li>
+<li>Subtract the lowest cost from the second lowest cost.</li>
+<li>Repeat the same process for every active column.</li>
+<li>Identify the row or column with the highest penalty.</li>
+<li>Choose the lowest-cost cell in that row or column.</li>
+<li>Allocate the maximum possible quantity.</li>
+<li>Update supply and demand.</li>
+<li>Remove exhausted rows and satisfied columns.</li>
+<li>Recalculate all penalties.</li>
+<li>Repeat until complete.</li>
+</ol>
+
+<h2>Example of Penalty</h2>
+<p>Suppose a row has available costs:</p>
+<div class="formula">3, 5, 8</div>
+<p>The two lowest costs are 3 and 5.</p>
+<div class="formula">Penalty = 5 − 3 = 2</div>
+
+<h2>Important Reminder</h2>
+<div class="callout warning">
+Always recalculate the penalties after every allocation. Do not reuse the original penalty values.
+</div>
+
+<a href="../solver.html" class="btn-primary">Try VAM in Solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

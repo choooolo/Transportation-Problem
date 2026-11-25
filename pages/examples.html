@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worked Examples</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<script defer src="../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Worked Examples</header>
+<section class="content">
+
+<h1>Worked Transportation Examples</h1>
+
+<div class="panel">
+<h2>Example 1: Balanced Transportation Problem</h2>
+
+<table>
+<tr><th>From / To</th><th>A</th><th>B</th><th>C</th><th>Supply</th></tr>
+<tr><th>D</th><td>5</td><td>4</td><td>3</td><td>100</td></tr>
+<tr><th>E</th><td>8</td><td>4</td><td>3</td><td>300</td></tr>
+<tr><th>F</th><td>9</td><td>7</td><td>5</td><td>300</td></tr>
+<tr><th>Demand</th><td>300</td><td>200</td><td>200</td><td>700</td></tr>
+</table>
+
+<h3>Least Cost Method</h3>
+<ol class="steps">
+<li>E → C: Allocate 200 units at cost 3.</li>
+<li>D → B: Allocate 100 units at cost 4.</li>
+<li>E → B: Allocate 100 units at cost 4.</li>
+<li>F → A: Allocate 300 units at cost 9.</li>
+</ol>
+
+<h3>Final Allocation</h3>
+
+<table>
+<tr><th>Source</th><th>A</th><th>B</th><th>C</th></tr>
+<tr><th>D</th><td>0</td><td>100</td><td>0</td></tr>
+<tr><th>E</th><td>0</td><td>100</td><td>200</td></tr>
+<tr><th>F</th><td>300</td><td>0</td><td>0</td></tr>
+</table>
+
+<div class="formula">
+TC = (200 × 3) + (100 × 4) + (100 × 4) + (300 × 9)
+</div>
+
+<div class="callout success">
+Total transportation cost = 4,100.
+</div>
+
+<p>This is an initial Least Cost solution, not a confirmed optimal solution.</p>
+</div>
+
+<div class="panel">
+<h2>Example 2: Supply Exceeds Demand</h2>
+<p>Supply = 800; Demand = 600.</p>
+<div class="formula">Dummy Destination = 800 − 600 = 200</div>
+<p>Add a dummy destination with demand of 200 and appropriate dummy route costs.</p>
+</div>
+
+<div class="panel">
+<h2>Example 3: Demand Exceeds Supply</h2>
+<p>Supply = 500; Demand = 700.</p>
+<div class="formula">Dummy Source = 700 − 500 = 200</div>
+<p>Add a dummy source with supply of 200.</p>
+</div>
+
+<a class="btn-primary" href="solver.html">Try the examples in the solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transportation Table</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<script defer src="../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button class="menu-toggle" id="menuToggle">☰</button>Transportation Table</header>
+<section class="content">
+
+<h1>Transportation Table</h1>
+<p>A transportation table organizes sources, destinations, costs, supply, and demand.</p>
+
+<div class="table-wrapper">
+<table>
+<tr><th>From / To</th><th>A</th><th>B</th><th>C</th><th>Supply</th></tr>
+<tr><th>D</th><td>5</td><td>4</td><td>3</td><td>100</td></tr>
+<tr><th>E</th><td>8</td><td>4</td><td>3</td><td>300</td></tr>
+<tr><th>F</th><td>9</td><td>7</td><td>5</td><td>300</td></tr>
+<tr><th>Demand</th><td>300</td><td>200</td><td>200</td><td>700</td></tr>
+</table>
+</div>
+
+<h2>How to Read the Table</h2>
+
+<ul class="steps">
+<li>Rows represent the sources.</li>
+<li>Columns represent the destinations.</li>
+<li>Numbers inside cells represent unit transportation costs.</li>
+<li>The rightmost column represents supply.</li>
+<li>The bottom row represents demand.</li>
+<li>The bottom-right cell represents the total supply or total demand when balanced.</li>
+</ul>
+
+<div class="callout success">
+Total supply = 700.<br>
+Total demand = 700.<br>
+Therefore, this transportation problem is balanced.
+</div>
+
+<a href="solver.html" class="btn-primary">Try Your Own Table →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

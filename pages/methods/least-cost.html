@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Least Cost Method</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Initial Solution Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 02 · INITIAL ALLOCATION</span>
+<h1>Least Cost Method (LCM)</h1>
+
+<p>The Least Cost Method selects the available transportation route with the lowest unit transportation cost.</p>
+
+<h2>Procedure</h2>
+<ol class="steps">
+<li>Find the lowest cost in the available transportation table.</li>
+<li>Allocate the maximum possible quantity to that cell.</li>
+<li>Subtract the allocation from the corresponding supply.</li>
+<li>Subtract the allocation from the corresponding demand.</li>
+<li>Cross out the exhausted row or satisfied column.</li>
+<li>Find the next lowest available cost.</li>
+<li>Repeat until all supply and demand are satisfied.</li>
+</ol>
+
+<h2>Allocation Formula</h2>
+<div class="formula">xᵢⱼ = MIN(Supplyᵢ, Demandⱼ)</div>
+
+<h2>Example</h2>
+<p>Available supply = 300</p>
+<p>Destination demand = 200</p>
+<p>Transportation cost = 3</p>
+<div class="formula">Allocation = MIN(300, 200) = 200</div>
+
+<p>The source has 100 units remaining, while the destination is already satisfied.</p>
+
+<h2>Handling Ties</h2>
+<p>If two or more cells have the same lowest transportation cost, use the tie-breaking rule required by your instructor. If none is specified, a consistent rule is to choose the cell allowing the largest allocation.</p>
+
+<h2>Total Cost</h2>
+<div class="formula">TC = Σ (Allocation × Unit Cost)</div>
+
+<div class="callout success">
+Remember: Least Cost considers transportation costs when selecting the next route, unlike North-West Corner.
+</div>
+
+<a href="../solver.html" class="btn-primary">Try Least Cost in Solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>

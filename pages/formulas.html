@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formula Reference</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<script defer src="../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Formula Reference</header>
+<section class="content">
+
+<h1>Transportation Problems Formula Reference</h1>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Total Transportation Cost</h3>
+<div class="formula">Z = ΣΣ cᵢⱼxᵢⱼ</div>
+<p>Multiply allocations by unit costs and add them.</p>
+</div>
+
+<div class="card">
+<h3>Balanced Transportation</h3>
+<div class="formula">Σ Supply = Σ Demand</div>
+<p>Determines whether a problem is balanced.</p>
+</div>
+
+<div class="card">
+<h3>Number of Basic Allocations</h3>
+<div class="formula">m + n − 1</div>
+<p>Required number of independent basic cells in a non-degenerate basis.</p>
+</div>
+
+<div class="card">
+<h3>VAM Penalty</h3>
+<div class="formula">Second Lowest − Lowest</div>
+<p>Calculates row and column penalties.</p>
+</div>
+
+<div class="card">
+<h3>MODI Potentials</h3>
+<div class="formula">uᵢ + vⱼ = cᵢⱼ</div>
+<p>Used to determine U and V values.</p>
+</div>
+
+<div class="card">
+<h3>MODI Opportunity Cost</h3>
+<div class="formula">Δᵢⱼ = cᵢⱼ − uᵢ − vⱼ</div>
+<p>Used to test optimality for minimization.</p>
+</div>
+
+<div class="card">
+<h3>Maximization Conversion</h3>
+<div class="formula">c'ᵢⱼ = M − pᵢⱼ</div>
+<p>Converts a fixed-total profit problem into minimization.</p>
+</div>
+
+<div class="card">
+<h3>Allocation Quantity</h3>
+<div class="formula">MIN(Supply, Demand)</div>
+<p>Determines the maximum possible allocation.</p>
+</div>
+
+<div class="card">
+<h3>Dummy Destination</h3>
+<div class="formula">Supply − Demand</div>
+<p>Used when supply exceeds demand.</p>
+</div>
+
+<div class="card">
+<h3>Dummy Source</h3>
+<div class="formula">Demand − Supply</div>
+<p>Used when demand exceeds supply.</p>
+</div>
+
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

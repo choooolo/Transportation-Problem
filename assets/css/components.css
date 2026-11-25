@@ -1,0 +1,89 @@
+
+.card,
+.panel {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.panel {
+    margin: 20px 0;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    color: var(--primary);
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.page-header p {
+    color: var(--muted);
+}
+
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #e8eef8;
+    color: var(--primary);
+}
+
+.callout {
+    padding: 15px;
+    border-radius: 8px;
+    background: #eff6ff;
+    border-left: 4px solid var(--accent);
+    margin: 18px 0;
+}
+
+.callout.warning {
+    background: #fff7ed;
+    border-color: #d97706;
+}
+
+.callout.success {
+    background: #f0fdf4;
+    border-color: var(--success);
+}
+
+.formula {
+    font-family: Cambria, Georgia, serif;
+    background: #f8fafc;
+    padding: 15px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+    font-size: 19px;
+    margin: 12px 0;
+    overflow-x: auto;
+}
+
+.steps {
+    padding-left: 25px;
+}
+
+.steps li {
+    margin-bottom: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background: #eff6ff;
+    color: var(--accent);
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}

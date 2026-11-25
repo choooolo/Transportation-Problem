@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MODI Method</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<script defer src="../../assets/js/navigation.js"></script>
+</head>
+<body>
+<div class="app">
+<aside id="sidebar" class="sidebar"></aside>
+<main class="main-content">
+<header class="topbar"><button id="menuToggle" class="menu-toggle">☰</button>Optimization Methods</header>
+<section class="content">
+
+<span class="eyebrow">METHOD 06 · OPTIMIZATION</span>
+<h1>MODI Method (Modified Distribution Method)</h1>
+
+<p>The MODI method, also called the U-V Method, is used to test and improve a basic feasible transportation solution.</p>
+
+<h2>Step 1: Find the Basic Cells</h2>
+<p>Identify the occupied cells in your transportation table. A non-degenerate basis should have:</p>
+<div class="formula">m + n − 1</div>
+
+<h2>Step 2: Calculate U and V Values</h2>
+<div class="formula">uᵢ + vⱼ = cᵢⱼ</div>
+<p>Use this equation for each basic cell. Set one potential, commonly u₁, equal to zero.</p>
+
+<h2>Step 3: Calculate Opportunity Costs</h2>
+<div class="formula">Δᵢⱼ = cᵢⱼ − uᵢ − vⱼ</div>
+
+<h2>Step 4: Test Optimality</h2>
+<div class="callout success">
+For a minimization problem, the solution is optimal if every eligible non-basic cell has Δᵢⱼ ≥ 0.
+</div>
+
+<h2>Step 5: Improve the Solution</h2>
+<ol class="steps">
+<li>Select the most negative reduced cost.</li>
+<li>Make that unoccupied cell the entering cell.</li>
+<li>Construct a valid closed loop.</li>
+<li>Assign alternating plus and minus signs.</li>
+<li>Find the smallest allocation in the minus positions.</li>
+<li>Add and subtract this quantity along the loop.</li>
+<li>Recalculate the U and V values.</li>
+<li>Repeat the optimality test.</li>
+</ol>
+
+<h2>Important Reminder</h2>
+<p>If there are fewer than m+n−1 independent basic cells, address degeneracy before calculating MODI potentials.</p>
+
+<a href="../solver.html" class="btn-primary">Try MODI in Solver →</a>
+
+</section>
+</main>
+</div>
+</body>
+</html>
